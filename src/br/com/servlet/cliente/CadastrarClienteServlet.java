@@ -1,4 +1,4 @@
-package br.com.servlet3.cliente;
+package br.com.servlet.cliente;
 
 import java.io.IOException;
 
@@ -21,7 +21,9 @@ public class CadastrarClienteServlet extends HttpServlet{
 	}
 	
 	@Override
-	protected void doGet(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException		{
+	protected void doPost (HttpServletRequest request,
+	        HttpServletResponse response)
+	        throws ServletException, IOException {
 		String nomeCliente = request.getParameter("nome");
 		Integer idadeCliente = Integer.parseInt(request.getParameter("idade"));
 		

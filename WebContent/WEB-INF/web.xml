@@ -15,11 +15,11 @@
 
 	<servlet>
 		<servlet-name>cadastrarCliente</servlet-name>
-		<servlet-class>br.com.servlet3.cliente.CadastrarClienteServlet</servlet-class>
+		<servlet-class>br.com.servlet.cliente.CadastrarClienteServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>cadastrarCliente</servlet-name>
-		<url-pattern>/cadastrarCLiente.do</url-pattern>
+		<url-pattern>/cadastrarCLiente</url-pattern>
 	</servlet-mapping>
 
 </web-app>
