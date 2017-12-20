@@ -48,7 +48,7 @@ public class CadastrarClienteServlet extends HttpServlet {
 
 		System.out.println("cadastrou o cliente");
 
-		RequestDispatcher rd = req.getRequestDispatcher("/clienteArmazenadoTeste");
+		RequestDispatcher rd = getServletContext().getRequestDispatcher("/clienteArmazenadoTeste");
 
 		rd.forward(req, resp);
 	}
